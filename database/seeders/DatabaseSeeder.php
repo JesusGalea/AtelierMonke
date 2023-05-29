@@ -18,5 +18,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        DB::table('users')->truncate();
+        User::create(['id' => 10, 'name' => 'Admin',     'email' => 'XD@prueba.es',            'password' => Hash::make('123456Aa'), 'rol_id' => '1']);
     }
 }

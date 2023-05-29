@@ -23,16 +23,15 @@
             clear: both;
         }
 
-        #game {
-            position: absolute;
-            z-index: 1;
-        }
-
         #barra {
             font-family: 'Monoton';
             background-color: #3B3B3B;
             color: gold;
             align-content: center;
+        }
+        #game {
+            position: absolute;
+            z-index: 1;
         }
 
         body {
@@ -47,7 +46,7 @@
             width: 80%;
             max-width: 1480px;
             z-index: 0;
-
+           
         }
 
         /*menor de  1000px */
@@ -136,7 +135,7 @@
             #newGames {
                 width: 500px;
                 height: auto;
-
+               
 
             }
 
@@ -173,6 +172,7 @@
                 background-color: black;
             }
 
+          
             .nav li:hover>ul {
                 display: block;
             }
@@ -214,17 +214,15 @@
             }
         }
 
-        #r,
-        #l {
+        #r,#l{
 
             right: -61%;
-
-
+                
+          
         }
-
-        #welcome {
-            top: 10px;
-            left: 800px;
+        #welcome{
+            top:10px;
+           left: 800px;
         }
     </style>
 </head>
@@ -239,37 +237,32 @@
                 <ul id="game">
                     <li>
                         <form action="" method="get">
-                            <input style="background-color:white; font-size: smaller;" type="text" placeholder="Buscar"
-                                name="search">
-                            <button style="background-color:gold; font-size: smaller; color: black;"
-                                type="submit">Buscar</button>
+                            <input style="background-color:white; font-size: smaller;"type="text" placeholder="Buscar" name="search">
+                            <button style="background-color:gold; font-size: smaller; color: black;" type="submit">Buscar</button>
                         </form>
                     </li>
-                    <li><a href="">Plataformas</a>
-                    <ul id="game"><li>PC</li>
-                                  <li>Switch</li>
-                                  <li>PS5</li>
-                                  <li>XBOX</li>
-                    </ul></li>
-                    <li><a href="Recomendaciones.html">Recomendaciones</a></li>
+                    <li><a href="">Plataformas</a></li>
+                    <li><a href="Recomendaciones.html" style="font-size: smaller;">Recomendaciones</a></li>
                 </ul>
             <li><a href="MiLista.html">Mi &nbsp; lista</a></li>
             <li><a href="">Reseñas</a></li>
-            <br>
+            <br><br>
             <li id="r"><a href="Registro.html">Resgistro</a></li>
-            &nbsp;&nbsp;
-            <li id="l"><a href="Login.html">Log&nbsp;&nbsp;&nbsp;in</a></li>
-            <li id="welcome" hidden>Bienvenido/a </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li id="l"><a href="Login.html">Login</a></li>
+            <li id="welcome" hidden><p>Bienvenido/a </p></li>
             </li>
+        
         </ul>
     </div>
     <div id="monke" class="container-fluid p-5 text-center">
         <img src="images/logo.png" class="monke" width="400" height="400">
     </div>
     <br> <br> <br><br>
+   
+        <div id="content" class="col-md-12">
+            <div id="newGames"> Top Videogames </div>
 
-    <div id="content" class="col-md-12">
-        <div id="newGames"> Videojuegos recientes </div>
     </div>
 </body>
 

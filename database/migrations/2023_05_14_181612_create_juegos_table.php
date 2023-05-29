@@ -13,7 +13,17 @@ return new class extends Migration
     {
         Schema::create('juegos', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('portada');
+            $table->string('descripcion');
+            $table->date('fecha_lanzamiento');
+            $table->integer('categoria_id');
+            $table->integer('switch');
+            $table->integer('ps5');
+            $table->integer('xbox');
+            $table->integer('pc');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
